@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact &amp; Order Title | Title Simply NC</title>
+  <meta name="description" content="Order title or reach out to Title Simply. Tell us about your North Carolina transaction and we'll get moving — available nights and weekends." />
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav" id="nav">
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="Title Simply home"><img src="assets/images/logo.png" alt="Title Simply" /></a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="homeowners.html">Home Owners</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="#order" class="btn btn--ghost">Order Title</a>
+        <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="homeowners.html">Home Owners</a>
+    <a href="contact.html">Contact</a>
+    <a href="#order" class="btn btn--primary">Order Title</a>
+  </div>
+
+  <!-- ===== HERO + FORM ===== -->
+  <section class="hero" style="padding-bottom:clamp(48px,6vw,80px)">
+    <div class="bg-orbs"><span class="orb orb--1"></span><span class="orb orb--2"></span></div>
+    <div class="grid-lines"></div>
+    <div class="wrap">
+      <div class="contact-grid">
+        <div data-reveal>
+          <span class="eyebrow"><span class="dot"></span> Get in touch</span>
+          <h1 class="h1" style="font-size:clamp(2.2rem,5vw,3.6rem);margin:18px 0 16px">Order title or<br /><span class="grad-text">reach out.</span></h1>
+          <p class="lead">Tell us about your transaction and we'll get moving. Prefer to talk? Call us — we're available nights and weekends across North Carolina.</p>
+          <div class="contact-list">
+            <a class="contact-item" href="tel:+10000000000">
+              <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.6a2 2 0 01-.5 2.1L8 11.6a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.5c.8.3 1.7.5 2.6.6a2 2 0 011.7 2z"/></svg></span>
+              <div><div class="l">Call us</div><div class="v">(XXX) XXX-XXXX</div></div>
+            </a>
+            <a class="contact-item" href="mailto:orders@titlesimplync.com">
+              <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg></span>
+              <div><div class="l">Email</div><div class="v">orders@titlesimplync.com</div></div>
+            </a>
+            <div class="contact-item">
+              <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+              <div><div class="l">Service area</div><div class="v">All of North Carolina</div></div>
+            </div>
+            <div class="contact-item">
+              <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
+              <div><div class="l">Availability</div><div class="v">Nights &amp; weekends</div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Order form -->
+        <div id="order" data-reveal data-delay="1">
+          <div class="form-card">
+            <h2 class="h3" style="margin-bottom:6px">Order Title</h2>
+            <p class="muted" style="font-size:.95rem;margin-bottom:18px">Share a few details and we'll be in touch quickly.</p>
+            <div class="form-note">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+              <span>Preview form — submissions aren't connected to a destination yet. Wire an endpoint (Formspree, GoHighLevel, or a serverless handler) in <code>assets/js/script.js</code> to go live.</span>
+            </div>
+            <form data-order-form novalidate>
+              <div class="form-grid">
+                <div class="field"><label for="fn">First name</label><input id="fn" name="first_name" type="text" autocomplete="given-name" required /></div>
+                <div class="field"><label for="ln">Last name</label><input id="ln" name="last_name" type="text" autocomplete="family-name" required /></div>
+                <div class="field"><label for="em">Email</label><input id="em" name="email" type="email" autocomplete="email" required /></div>
+                <div class="field"><label for="ph">Phone</label><input id="ph" name="phone" type="tel" autocomplete="tel" /></div>
+                <div class="field">
+                  <label for="sv">Service needed</label>
+                  <select id="sv" name="service">
+                    <option value="">Select…</option>
+                    <option>Residential Title</option>
+                    <option>Land Title</option>
+                    <option>Closing Services</option>
+                    <option>Commercial Title Insurance</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="st">Property state</label>
+                  <select id="st" name="state">
+                    <option value="">Select…</option>
+                    <option selected>North Carolina</option>
+                    <option>South Carolina</option>
+                  </select>
+                </div>
+                <div class="field full"><label for="ad">Property address</label><input id="ad" name="address" type="text" autocomplete="street-address" /></div>
+                <div class="field full"><label for="ms">Details / message</label><textarea id="ms" name="message" placeholder="Tell us about your transaction…"></textarea></div>
+              </div>
+              <button type="submit" class="btn btn--primary btn--lg" style="width:100%;margin-top:18px">Order Title
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+              <p class="form-consent">By submitting this form I agree to be contacted by Title Simply via call, email, and text.</p>
+              <div class="form-ok" role="status"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== QUICK ACTIONS ===== -->
+  <section class="section section--tight">
+    <div class="wrap">
+      <div class="cards cards--3">
+        <a class="card tilt" href="tel:+10000000000" data-reveal>
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.6a2 2 0 01-.5 2.1L8 11.6a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.5c.8.3 1.7.5 2.6.6a2 2 0 011.7 2z"/></svg></span>
+          <h3>Call us today</h3>
+          <p>(XXX) XXX-XXXX — available nights and weekends.</p>
+        </a>
+        <a class="card tilt" href="mailto:orders@titlesimplync.com" data-reveal data-delay="1">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg></span>
+          <h3>Email orders</h3>
+          <p>orders@titlesimplync.com — we'll respond quickly.</p>
+        </a>
+        <a class="card tilt" href="services.html" data-reveal data-delay="2">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg></span>
+          <h3>Explore services</h3>
+          <p>Residential, closing, and commercial title services.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="f-brand">
+          <img src="assets/images/logo-white.png" alt="Title Simply" />
+          <p>Full-service residential and commercial title insurance for North Carolina. Title, made simply.</p>
+        </div>
+        <div><h5>Explore</h5><ul><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="homeowners.html">Home Owners</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div><h5>Get started</h5><ul><li><a href="#order">Order Title</a></li><li><a href="tel:+10000000000">Call us</a></li><li><a href="mailto:orders@titlesimplync.com">Email orders</a></li></ul></div>
+        <div><h5>Contact</h5><ul class="f-contact"><li><a href="tel:+10000000000">(XXX) XXX-XXXX</a></li><li><a href="mailto:orders@titlesimplync.com">orders@titlesimplync.com</a></li><li>Serving all of North Carolina</li></ul></div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Title Simply NC. All rights reserved.</span>
+        <span class="partner">Backed by a national title underwriter.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
